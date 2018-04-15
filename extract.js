@@ -1,7 +1,7 @@
 'use strict';
 var Promise = require('bluebird');
 var AWS = require('aws-sdk');
-AWS.config.update({region: 'us-east-1'});
+AWS.config.update({region: 'eu-central-1'});
 var ec2 = new AWS.EC2({});
 
 var params = {
@@ -9,7 +9,7 @@ var params = {
     {
       Name: 'group-name',
       Values: [
-        '*AppName*'
+        '*'
       ]
     }
   ]

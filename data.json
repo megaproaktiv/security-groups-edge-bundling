@@ -1,0 +1,85 @@
+[
+  {
+    "name": "quick-create-1",
+    "description": "quick-create-1 created on Friday, July 28, 2017 at 12:17:36 PM UTC+2",
+    "id": "sg-092b0862",
+    "ingress": [
+      {
+        "name": "0.0.0.0/0",
+        "protocol": "tcp",
+        "fromPort": 80,
+        "description": "SSH Admin"
+      }
+    ]
+  },
+  {
+    "name": "rds-launch-wizard",
+    "description": "RDS",
+    "id": "sg-274e764d",
+    "ingress": [
+      {
+        "name": "84.129.17.105/32",
+        "protocol": "tcp",
+        "fromPort": 3306,
+        "description": ""
+      }
+    ]
+  },
+  {
+    "name": "Server1",
+    "description": "Server 1 description",
+    "id": "sg-3aff0a57",
+    "ingress": [
+      {
+        "name": "0.0.0.0/0",
+        "protocol": "tcp",
+        "fromPort": 22,
+        "description": ""
+      }
+    ]
+  },
+  {
+    "name": "Server 2",
+    "description": "Server 2",
+    "id": "sg-417b472a",
+    "ingress": [
+      {
+        "name": "84.139.21.184/32",
+        "protocol": "tcp",
+        "fromPort": 80,
+        "description": "HTTP Tests"
+      },
+      {
+        "name": "84.139.21.184/32",
+        "protocol": "tcp",
+        "fromPort": 22,
+        "description": "SSH Connect"
+      },
+      {
+        "name": "84.139.21.184/32",
+        "protocol": "tcp",
+        "fromPort": 5601,
+        "description": "kibana"
+      },
+      {
+        "name": "84.139.21.184/32",
+        "protocol": "icmp",
+        "fromPort": -1,
+        "description": "Ping test"
+      }
+    ]
+  },
+  {
+    "name": "ELBSG",
+    "description": "Local Balancer",
+    "id": "sg-c93d1ea2",
+    "ingress": [
+      {
+        "name": "0.0.0.0/0",
+        "protocol": "tcp",
+        "fromPort": 80,
+        "description": ""
+      }
+    ]
+  }
+]
