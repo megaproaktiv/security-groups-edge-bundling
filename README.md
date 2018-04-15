@@ -2,6 +2,10 @@
 
 Show security groups in local website with ports. Derived from the work of rowanu, see below. Thank you for the idea and work!
 
+It looks like this:
+
+![Demo view](img/view.png)
+
 ## Quick Demo
 
 - have node and python 3 installed
