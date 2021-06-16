@@ -37,9 +37,9 @@ var params = {
 Install NPM packages
 1) `make generate`
 Get security groups from current account.
-1) `make server``
+1) `make server`
 Start python 3 local webserver.
-1) Open [local webserver](http://localhost:1337)
+1) Open [local webserver](http://localhost:8000)
 
 ## Know Limitations
 
